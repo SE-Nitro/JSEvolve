@@ -1,0 +1,136 @@
+/* Main */
+
+body {
+    background-color: #d8d8d8;
+}
+
+#main {
+    margin-left: 250px;
+}
+
+#header {
+    text-align: center;
+    font-family: "Verdana";
+    font-size: 68px;
+}
+
+.text {
+    font-size: 30px;
+}
+
+#main-interface {
+    width: 100%;
+    padding-left: 10%;
+    padding-top: 3%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+#canvas-div {
+    flex: 0 0 50%;
+}
+
+#settings {
+    flex: 0 0 48%;
+}
+
+.single-setting {
+    display: table;
+    width: 100%;
+    margin-bottom: 8%;
+}
+
+.form-label {
+    float:left;
+    display:inline;
+    width: 50%;
+}
+
+.form-control {
+    float:left;
+    display:inline;
+    width: 45%;
+}
+
+.main-dropdown {
+    color: black;
+    background-color: white;
+}
+
+input[type='checkbox'] {
+    width:45px;
+    height:45px;
+}
+
+#start-btn {
+    width: 49%;
+    font-size: 20px;
+}
+
+#regenerate-btn {
+    width: 49%;
+    height: 15%;
+    font-size: 20px;
+}
+
+#help-btn {
+    position: absolute;
+    top: 2%;
+    right: 4%;
+    font-size: 2rem;
+    width: 75px;
+    height: 75px;
+    color: white;
+    background-color: #ff6969
+}
+
+#help-btn:hover {
+    background-color: #f42069
+}
+
+
+
+/* Side-Nav Stuff */
+
+#sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    background-color: #2a2a2a;
+    overflow-x: hidden;
+}
+
+
+#sidenav .dropdown {
+    padding: 6px 8px 6px 15px;
+    font-size: 20px;
+    color: #2c2c2c;
+    display: block;
+    border: solid;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+#sidenav .dropdown-menu {
+    color: #2c2c2c;
+    background-color: #afafaf
+}
+
+
+#sidenav .dropdown:hover {
+    color: #f1f1f1;
+}
+
+#sidenav .dropdown-item:hover {
+    color: #f1f1f1;
+    background-color: #2a2a2a
+}
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
