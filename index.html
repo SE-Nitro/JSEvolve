@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="JSEvolve. Interactive Evolution Program. Copyright (c) 2022 SE-Nitro">
         <title>JSEvolve</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
@@ -11,13 +12,13 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
         
-        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
 
         <script src="sketch.js"></script>
     </head>
     <body>
         <div id="sidenav">
-            <a id="survival" class="btn btn-secondary dropdown-toggle dropdown" role="button" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a id="survival" class="btn dropdown-toggle dropdown" role="button" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Add Survival Area
             </a>
             <div class="dropdown-menu" aria-labelledby="survival">
@@ -25,7 +26,7 @@
                 <a class="dropdown-item" href="#">Circle</a>
             </div>
 
-            <a id="fatal" class="btn btn-secondary dropdown-toggle dropdown" role="button" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a id="fatal" class="btn dropdown-toggle dropdown" role="button" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Add Fatal Area
             </a>
             <div class="dropdown-menu" aria-labelledby="fatal">
@@ -33,7 +34,7 @@
                 <a class="dropdown-item" href="#">Circle</a>
             </div>
 
-            <a id="barrier" class="btn btn-secondary dropdown-toggle dropdown" role="button" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a id="barrier" class="btn dropdown-toggle dropdown" role="button" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Add Barrier
             </a>
             <div class="dropdown-menu" aria-labelledby="barrier">
@@ -41,7 +42,7 @@
                 <a class="dropdown-item" href="#">Circle</a>
             </div>
 
-            <a id="radioactive" class="btn btn-secondary dropdown-toggle dropdown" role="button" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a id="radioactive" class="btn dropdown-toggle dropdown" role="button" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Add Radioactive Area
             </a>
             <div class="dropdown-menu" aria-labelledby="radioactive">
@@ -56,7 +57,7 @@
                 <div id="canvas-div"></div>
                 <div id="settings" class="form-outline">
                     <div class="single-setting">
-                        <label class="form-label text" for="typeNumber">Population size:</label>
+                        <label class="form-label text" for="population">Population size:</label>
                         <input type="number" id="population" class="form-control" min=100 max=3000 value=1000 />
                     </div>
 
@@ -85,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            <button id="help-btn" type="button" class="btn" onclick="alert('ask ur mom')"><i class="bi bi-question-diamond-fill"></i></button>
+            <button id="help-btn" type="button" class="btn" onclick="alert('ask ur mom')" aria-label="Help button"><i class="bi bi-question-diamond-fill"></i></button>
         </div>
     </body>
 </html>
