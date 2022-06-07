@@ -1,4 +1,4 @@
-/* Main */
+/* ------------------------------ Main ----------------------------------*/
 
 body {
     background-color: #d8d8d8;
@@ -11,6 +11,7 @@ body {
 #header {
     text-align: center;
     font-family: "Verdana";
+    font-display: swap;
     font-size: 68px;
 }
 
@@ -65,13 +66,16 @@ input[type='checkbox'] {
 
 #start-btn {
     width: 49%;
+    height: 60px;
     font-size: 20px;
+    color: black;
 }
 
 #regenerate-btn {
     width: 49%;
-    height: 15%;
+    height: 60px;
     font-size: 20px;
+    color: black;
 }
 
 #help-btn {
@@ -91,7 +95,7 @@ input[type='checkbox'] {
 
 
 
-/* Side-Nav Stuff */
+/* ----------------------------  Side-Nav Stuff ----------------------------------*/
 
 #sidenav {
     height: 100%;
