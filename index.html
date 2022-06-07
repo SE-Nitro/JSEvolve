@@ -23,7 +23,32 @@
         <script src="sketch.js"></script>
     </head>
     <body>
+        <!-- Inline Scripts -->
+        <script>
+            function toggleNav() {
+                if (document.getElementById("sidenav").style.state == "open") {
+                    for (elem of document.getElementsByClassName("dropdown")){
+                        elem.style.setProperty("display", "none", "important");
+                    }
+                    document.getElementById("sidenav").style.width = "0px";
+                    document.getElementById("main").style.marginLeft = "0px";
+                    document.getElementById("sidenav").style.state = "close";
+
+                } else {
+                    for (elem of document.getElementsByClassName("dropdown")){
+                        elem.style.setProperty("display", "block", "important");
+                    }
+                    document.getElementById("sidenav").style.width = "250px";
+                    document.getElementById("main").style.marginLeft = "250px";
+                    document.getElementById("sidenav").style.state = "open";
+                }
+                
+            }
+        </script>
+
+        <!-- HTML -->
         <div id="sidenav">
+            <button id="togglebtn" type="button" class="btn dropdown" onclick="toggleNav()" aria-lebl="Toggle sidebar">X</button>
             <a id="survival" class="btn dropdown-toggle dropdown" role="button" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Add Survival Area
             </a>
@@ -59,6 +84,7 @@
         
         <div id="main">
             <p id="header">JS Evolve</p>
+            <button id="sidebar-btn" type="button" class="btn" onclick="toggleNav()" aria-lebl="Toggle sidebar" style="background-color: #a8a8a8;margin-top: -14%;">☰</button>
             <div id="main-interface">
                 <div id="canvas-div"></div>
                 <div id="settings" class="form-outline">
