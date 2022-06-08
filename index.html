@@ -30,6 +30,7 @@
                     for (elem of document.getElementsByClassName("dropdown")){
                         elem.style.setProperty("display", "none", "important");
                     }
+                    document.getElementById("sidenav-btn").style.setProperty("display", "", "important");
                     document.getElementById("sidenav").style.width = "0px";
                     document.getElementById("main").style.marginLeft = "0px";
                     document.getElementById("sidenav").style.state = "close";
@@ -38,6 +39,7 @@
                     for (elem of document.getElementsByClassName("dropdown")){
                         elem.style.setProperty("display", "block", "important");
                     }
+                    document.getElementById("sidenav-btn").style.setProperty("display", "none", "important");
                     document.getElementById("sidenav").style.width = "250px";
                     document.getElementById("main").style.marginLeft = "250px";
                     document.getElementById("sidenav").style.state = "open";
@@ -84,7 +86,7 @@
         
         <div id="main">
             <p id="header">JS Evolve</p>
-            <button id="sidebar-btn" type="button" class="btn" onclick="toggleNav()" aria-lebl="Toggle sidebar" style="background-color: #a8a8a8;margin-top: -14%;">☰</button>
+            <button id="sidenav-btn" type="button" class="btn" onclick="toggleNav()" aria-label="Toggle sidenav">☰</button>
             <div id="main-interface">
                 <div id="canvas-div"></div>
                 <div id="settings" class="form-outline">
@@ -109,7 +111,7 @@
                     
                     <div class="single-setting">
                         <label class="form-label text" for="kill">Enable Killing:</label>
-                        <input type="checkbox" id="kill">
+                        <input type="checkbox" id="kill" class="form-control">
                     </div>
                     
                     <div>
